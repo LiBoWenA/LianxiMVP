@@ -12,7 +12,7 @@ public class IMoudleImpl implements IMoudle {
     private MyCallBack myCallBack;
     @SuppressLint("StaticFieldLeak")
     @Override
-    public void requestData(String url, String params, final MyCallBack myCallBack) {
+    public void requestData(String url, String params, Class clazz, final MyCallBack myCallBack) {
         this.myCallBack = myCallBack;
         new AsyncTask<String, Void, Bean>() {
             @Override
